@@ -2,11 +2,13 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 
-const Products = () => (
-  <div>
-    <h1>產品頁面</h1>
-    <ProductList />
-  </div>
-);
+const Products = () => {
+  return (
+    <div>
+      <h1>產品列表</h1>
+      <ProductList />
+    </div>
+  );
+};
 
 export default Products;

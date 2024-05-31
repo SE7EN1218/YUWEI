@@ -19,11 +19,11 @@ const Register = () => {
 
   return (
     <div>
-      <h1>注册</h1>
+      <h1>註冊</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleRegister}>
         <div>
-          <label htmlFor="email">电子邮件:</label>
+          <label htmlFor="email">電子郵件:</label>
           <input
             type="email"
             id="email"
@@ -33,7 +33,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <label htmlFor="password">密码:</label>
+          <label htmlFor="password">密碼:</label>
           <input
             type="password"
             id="password"
@@ -42,7 +42,7 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit">注册</button>
+        <button type="submit">註冊</button>
       </form>
     </div>
   );

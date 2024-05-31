@@ -12,8 +12,8 @@ const Header = () => (
         <li><Link to="/products">產品</Link></li>
         <li><Link to="/contact">聯繫我們</Link></li>
         <li><Link to="/about">關於我們</Link></li>
-        <li><Link to="/login">登录</Link></li>
-        <li><Link to="/register">注册</Link></li>
+        <li><Link to="/login">登錄</Link></li>
+        <li><Link to="/register">註冊</Link></li>
       </ul>
     </nav>
   </header>

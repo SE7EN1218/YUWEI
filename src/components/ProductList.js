@@ -1,19 +1,21 @@
 // src/components/ProductList.js
 import React from 'react';
+import products from '../data/products';
+import './ProductList.css'; // 確保有相應的 CSS 文件來樣式化產品列表
 
-const products = [
-  { id: 1, name: '雞胸肉', price: '￥69.99/公斤' },
-  { id: 2, name: '雞腿肉', price: '￥59.99/公斤' },
-  { id: 3, name: '雞翅', price: '￥49.99/公斤' },
-];
-
-const ProductList = () => (
-  <ul>
-    <h1>產品列表</h1>
-    {products.map(product => (
-      <li key={product.id}>{product.name} - {product.price}</li>
-    ))}
-  </ul>
-);
+const ProductList = () => {
+  return (
+    <div className="product-list">
+      {products.map((product) => (
+        <div key={product.id} className="product-item">
+          <img src={product.image} alt={product.name} className="product-image" />
+          <h3>{product.name}</h3>
+          <p>{product.description}</p>
+          <p>價格: ${product.price}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default ProductList;
